@@ -3,7 +3,7 @@ import { Problem4 } from "./problem4";
 import resourcekRoutes from "./problem5/resource-routers";
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3200;
 app.use(express.json());
 
 app.use("/problem5", resourcekRoutes);
