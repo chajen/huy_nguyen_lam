@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "9a94f82f-d11e-4918-acac-056ce6816b42",
+		"name": "99tech",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Resource",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"Test add title 8\",\n    \"description\": \"Test add description 8\",\n    \"status\":\"done\",\n    \"score\": 1000,\n    \"completed\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://116.118.51.11:3200/problem5",
+					"protocol": "http",
+					"host": [
+						"116",
+						"118",
+						"51",
+						"11"
+					],
+					"port": "3200",
+					"path": [
+						"problem5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Resource By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://116.118.51.11:3200/problem5/7",
+					"protocol": "http",
+					"host": [
+						"116",
+						"118",
+						"51",
+						"11"
+					],
+					"port": "3200",
+					"path": [
+						"problem5",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Resources",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://116.118.51.11:3200/problem5?status=done&completed=false",
+					"protocol": "http",
+					"host": [
+						"116",
+						"118",
+						"51",
+						"11"
+					],
+					"port": "3200",
+					"path": [
+						"problem5"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "done"
+						},
+						{
+							"key": "completed",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Resource",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Test add title 222 edit\",\n    \"description\": \"Test add description 222 edit\",\n    \"status\":\"updated\",\n    \"completed\":false,\n    \"score\": 99\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://116.118.51.11:3200/problem5/2",
+					"protocol": "http",
+					"host": [
+						"116",
+						"118",
+						"51",
+						"11"
+					],
+					"port": "3200",
+					"path": [
+						"problem5",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Resource",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://116.118.51.11:3200/problem5/2",
+					"protocol": "http",
+					"host": [
+						"116",
+						"118",
+						"51",
+						"11"
+					],
+					"port": "3200",
+					"path": [
+						"problem5",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
