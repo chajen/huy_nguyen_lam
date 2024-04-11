@@ -1,7 +1,7 @@
 export class Problem4 {
   static sum_to_n_a(n: number): number {
     // we can use recursion for calculating,
-    // cons is tt's easy over stack size exceeded
+    // cons is it's easy over stack size exceeded
     if (n <= 0) return 0;
     if (n > 1) return n + this.sum_to_n_a(n - 1);
     return n;
